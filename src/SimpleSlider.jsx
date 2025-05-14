@@ -18,7 +18,7 @@ const MetoSlider = ({ images }) => {
       <div className="slider-wrapper">
         {images.map((img, index) => (
           <div
-            className={`slide ${index === current ? "active" : ""}`}
+            className={`slide ${index === current ? "active" : ""}`} 
             key={index}
           >
             {index === current && <img src={img} alt={`Slide ${index}`} />}
